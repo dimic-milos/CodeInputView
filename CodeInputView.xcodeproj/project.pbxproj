@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		74DA781B2154FE5F005FA2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA781A2154FE5F005FA2F7 /* AppDelegate.swift */; };
-		74DA781D2154FE60005FA2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA781C2154FE60005FA2F7 /* ViewController.swift */; };
 		74DA78202154FE60005FA2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA781E2154FE60005FA2F7 /* Main.storyboard */; };
 		74DA78222154FE60005FA2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DA78212154FE60005FA2F7 /* Assets.xcassets */; };
-		74DA78252154FE60005FA2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA78232154FE60005FA2F7 /* LaunchScreen.storyboard */; };
 		74DA78302154FE60005FA2F7 /* CodeInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA782F2154FE60005FA2F7 /* CodeInputViewTests.swift */; };
+		74DA784021550155005FA2F7 /* UnderlinedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA783F21550155005FA2F7 /* UnderlinedView.xib */; };
+		74DA784221550163005FA2F7 /* UnderlinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA784121550163005FA2F7 /* UnderlinedView.swift */; };
+		74DA7847215502A8005FA2F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA7845215502A8005FA2F7 /* MainViewController.swift */; };
+		74DA7848215502A8005FA2F7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA7846215502A8005FA2F7 /* MainViewController.xib */; };
+		74DA78512158AADC005FA2F7 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA78502158AADC005FA2F7 /* CodeInputView.swift */; };
+		74DA78532158AB92005FA2F7 /* CodeInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA78522158AB92005FA2F7 /* CodeInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +32,18 @@
 /* Begin PBXFileReference section */
 		74DA78172154FE5F005FA2F7 /* CodeInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA781A2154FE5F005FA2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74DA781C2154FE60005FA2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74DA781F2154FE60005FA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74DA78212154FE60005FA2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74DA78242154FE60005FA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74DA78262154FE60005FA2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DA782B2154FE60005FA2F7 /* CodeInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA782F2154FE60005FA2F7 /* CodeInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputViewTests.swift; sourceTree = "<group>"; };
 		74DA78312154FE60005FA2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DA783F21550155005FA2F7 /* UnderlinedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnderlinedView.xib; sourceTree = "<group>"; };
+		74DA784121550163005FA2F7 /* UnderlinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedView.swift; sourceTree = "<group>"; };
+		74DA7845215502A8005FA2F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		74DA7846215502A8005FA2F7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		74DA78502158AADC005FA2F7 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
+		74DA78522158AB92005FA2F7 /* CodeInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,12 @@
 		74DA78192154FE5F005FA2F7 /* CodeInputView */ = {
 			isa = PBXGroup;
 			children = (
+				74DA784F2158AAC0005FA2F7 /* CodeInputView */,
+				74DA7849215502AD005FA2F7 /* MainViewController */,
+				74DA78432155016A005FA2F7 /* UnderlinedView */,
 				74DA781A2154FE5F005FA2F7 /* AppDelegate.swift */,
-				74DA781C2154FE60005FA2F7 /* ViewController.swift */,
 				74DA781E2154FE60005FA2F7 /* Main.storyboard */,
 				74DA78212154FE60005FA2F7 /* Assets.xcassets */,
-				74DA78232154FE60005FA2F7 /* LaunchScreen.storyboard */,
 				74DA78262154FE60005FA2F7 /* Info.plist */,
 			);
 			path = CodeInputView;
@@ -94,6 +103,33 @@
 				74DA78312154FE60005FA2F7 /* Info.plist */,
 			);
 			path = CodeInputViewTests;
+			sourceTree = "<group>";
+		};
+		74DA78432155016A005FA2F7 /* UnderlinedView */ = {
+			isa = PBXGroup;
+			children = (
+				74DA784121550163005FA2F7 /* UnderlinedView.swift */,
+				74DA783F21550155005FA2F7 /* UnderlinedView.xib */,
+			);
+			path = UnderlinedView;
+			sourceTree = "<group>";
+		};
+		74DA7849215502AD005FA2F7 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74DA7845215502A8005FA2F7 /* MainViewController.swift */,
+				74DA7846215502A8005FA2F7 /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		74DA784F2158AAC0005FA2F7 /* CodeInputView */ = {
+			isa = PBXGroup;
+			children = (
+				74DA78502158AADC005FA2F7 /* CodeInputView.swift */,
+				74DA78522158AB92005FA2F7 /* CodeInputView.xib */,
+			);
+			path = CodeInputView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +213,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA78252154FE60005FA2F7 /* LaunchScreen.storyboard in Resources */,
+				74DA784021550155005FA2F7 /* UnderlinedView.xib in Resources */,
+				74DA7848215502A8005FA2F7 /* MainViewController.xib in Resources */,
 				74DA78222154FE60005FA2F7 /* Assets.xcassets in Resources */,
 				74DA78202154FE60005FA2F7 /* Main.storyboard in Resources */,
+				74DA78532158AB92005FA2F7 /* CodeInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA781D2154FE60005FA2F7 /* ViewController.swift in Sources */,
+				74DA78512158AADC005FA2F7 /* CodeInputView.swift in Sources */,
+				74DA784221550163005FA2F7 /* UnderlinedView.swift in Sources */,
 				74DA781B2154FE5F005FA2F7 /* AppDelegate.swift in Sources */,
+				74DA7847215502A8005FA2F7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +267,6 @@
 				74DA781F2154FE60005FA2F7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74DA78232154FE60005FA2F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74DA78242154FE60005FA2F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
